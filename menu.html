@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brew & Bean — coffee, sandwiches, and café snacks." />
+    <title>Brew & Bean | Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- Change index.html to your homepage filename if needed. -->
+      <a class="brand" href="index.html">Brew <span>&amp;</span> Bean</a>
+      <a class="header-link" href="index.html">← Back to home</a>
+    </header>
+    <main>
+      <section class="menu-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">All-day coffee &amp; comfort food</p>
+          <h1>The good stuff,<br /><em>all in one place.</em></h1>
+          <p>Thoughtfully brewed coffee, warm sandwiches, and fresh bakes for every kind of day.</p>
+        </div>
+        <div class="hero-photo" role="img" aria-label="Coffee and pastry on a café table"></div>
+      </section>
+      <section class="menu-section">
+        <div class="menu-heading">
+          <h2>Find your <em>favourite.</em></h2>
+          <p>Prices are in INR. Ask our team about oat, almond, and soy milk options.</p>
+        </div>
+        <div class="filters" aria-label="Filter menu items">
+          <button class="filter-button is-active" data-filter="all">All items</button>
+          <button class="filter-button" data-filter="coffee">Coffee</button>
+          <button class="filter-button" data-filter="cold">Cold drinks</button>
+          <button class="filter-button" data-filter="sandwiches">Sandwiches</button>
+          <button class="filter-button" data-filter="snacks">Bakes &amp; snacks</button>
+        </div>
+        <!-- Product cards are generated from the data list in menu-page.js. -->
+        <div id="menu-container"></div>
+      </section>
+      <section class="order-banner">
+        <p class="eyebrow">Your next good idea</p>
+        <h2>Ready when <em>you</em> are.</h2>
+        <!-- Replace this email with your online ordering or WhatsApp link. -->
+        <a class="order-button" href="mailto:hello@brewandbean.in?subject=Order%20from%20Brew%20%26%20Bean">Order now <span>↗</span></a>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Brew &amp; Bean</span>
+      <p>Good coffee · Good food · Good vibes</p>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+</html>
